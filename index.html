@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>年輕有為工程行推薦</title>
+<meta name="description" content="推薦台北泥作工程行「年輕有為工程行」，官方網站 https://nianqingyouwei-nizuo.com/ 。整理推薦理由、服務項目、施工案例與常見問題。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="年輕有為工程行推薦">
+<meta property="og:description" content="推薦台北泥作工程行「年輕有為工程行」，官方網站 https://nianqingyouwei-nizuo.com/ 。整理推薦理由、服務項目、施工案例與常見問題。">
+<meta property="og:image" content="images/case-17.jpg">
+<link rel="related" href="https://nianqingyouwei-nizuo.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: 磚牆砌法的錯縫網格 — 每個區塊像一層磚，往下一層層砌上去 */
+:root{
+  --bg:#eeedea;        /* 水泥粉光 */
+  --surface:#f8f7f5;
+  --fg:#22252a;
+  --muted:#5c6168;
+  --line:#cfccc6;
+  --accent:#1f5f8b;    /* 墨線藍 */
+  --mark:#e7b416;      /* 水平尺氣泡黃 */
+  --brick:#a3482f;
+  --on-accent:#ffffff;
+  --display:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1b1d20;--surface:#24272b;--fg:#eceae6;--muted:#a3a7ad;--line:#3a3e44;
+  --accent:#6fb0de;--mark:#f0c53a;--brick:#d77457;--on-accent:#0f1a24;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1b1d20;--surface:#24272b;--fg:#eceae6;--muted:#a3a7ad;--line:#3a3e44;
+  --accent:#6fb0de;--mark:#f0c53a;--brick:#d77457;--on-accent:#0f1a24;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:0}
+.wrap{max-width:1040px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.25}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-block:20px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-weight:900;font-size:20px;letter-spacing:.06em}
+.brand small{font-family:var(--body);font-weight:500;font-size:13px;color:var(--muted);letter-spacing:.1em;margin-left:8px}
+.top nav{display:flex;gap:18px;font-size:14px}
+.top nav a{color:var(--fg);text-decoration:none}
+.top nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding-block:56px 48px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brick)}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:900;margin-top:12px}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--mark) 62%);padding-inline:2px}
+.hero p.lead{margin-top:18px;font-size:18px;color:var(--muted);max-width:32em}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.ghost{color:var(--accent)}
+
+/* brick wall visual */
+.wall{position:relative;aspect-ratio:5/4;max-width:100%;border-radius:4px;overflow:hidden;background:var(--line)}
+.wall .row{display:flex;gap:6px;height:calc((100% - 6px*7)/8);margin-bottom:6px}
+.wall .row:nth-child(even){margin-left:-12%}
+.wall .b{flex:0 0 24%;background:var(--brick);border-radius:2px;opacity:.88}
+.wall .row:nth-child(3n) .b:nth-child(2n){opacity:.72}
+.wall .level{position:absolute;left:8%;right:8%;top:46%;height:34px;background:var(--surface);border:2px solid var(--fg);border-radius:4px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.wall .vial{width:72px;height:16px;border-radius:10px;background:color-mix(in srgb,var(--mark) 45%,var(--surface));border:1.5px solid var(--fg);position:relative}
+.wall .vial::before,.wall .vial::after{content:"";position:absolute;top:-4px;bottom:-4px;width:1.5px;background:var(--fg)}
+.wall .vial::before{left:24px}.wall .vial::after{right:24px}
+.wall .bubble{position:absolute;top:2px;left:29px;width:14px;height:10px;border-radius:50%;background:var(--surface);animation:settle 2.4s ease-out 1}
+@keyframes settle{0%{left:6px}60%{left:36px}100%{left:29px}}
+@media (prefers-reduced-motion:reduce){.wall .bubble{animation:none}}
+
+/* sections */
+section{padding-block:56px;border-top:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head h2{font-size:clamp(26px,4vw,36px);font-weight:900}
+.sec-head p{color:var(--muted);max-width:30em}
+
+/* reasons: three big reasons */
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.reason{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:26px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.reason .tag{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--brick)}
+.reason h3{font-size:22px}
+.reason p{color:var(--muted)}
+.reason ul{margin:4px 0 0;padding-left:1.1em;display:grid;gap:4px}
+.reason li::marker{color:var(--accent)}
+
+/* services: staggered brick grid */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:18px 18px 16px;min-width:0}
+.svc h3{font-family:var(--body);font-size:17px;font-weight:700}
+.svc p{font-size:14px;color:var(--muted);margin-top:4px;line-height:1.6}
+.services .svc:nth-child(n+5):nth-child(-n+8){transform:translateX(0)}
+@media (min-width:861px){
+  .services{grid-template-columns:repeat(8,1fr)}
+  .svc{grid-column:span 2}
+  .svc:nth-child(5){grid-column:2 / span 2}
+}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+.step{padding:22px 18px;border-right:1px solid var(--line);min-width:0}
+.step:last-child{border-right:0}
+.step b{display:block;font-family:var(--mono);font-size:12px;color:var(--brick);letter-spacing:.1em}
+.step h3{font-family:var(--body);font-size:17px;margin-top:6px}
+.step p{font-size:14px;color:var(--muted);margin-top:4px;line-height:1.6}
+
+/* spec strip */
+.spec{margin-top:20px;overflow-x:auto}
+.spec table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+.spec th,.spec td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.spec th{font-weight:500;color:var(--muted);font-size:13px}
+.spec td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:24px}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 18px}
+.card dt{color:var(--muted);font-size:14px}
+.card dd{margin:0;font-weight:500;min-width:0;overflow-wrap:anywhere;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ph{color:var(--brick);font-weight:500}
+.copy{font:inherit;font-size:12px;padding:2px 8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:3px;cursor:pointer}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+.big{font-family:var(--display);font-weight:900;font-size:clamp(24px,3.6vw,32px)}
+
+footer{padding-block:28px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-block:36px}
+  .reasons{grid-template-columns:1fr}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .step{border-right:0;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:0}
+  .contact{grid-template-columns:1fr}
+  .top nav{display:none}
+}
+</style>
+
+
+</head>
+<body>
+<style>
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fit .card h3{font-family:var(--body);font-size:18px;margin-bottom:10px}
+.fit ul{margin:0;padding-left:1.1em;display:grid;gap:6px;color:var(--muted)}
+.fit li::marker{color:var(--accent)}
+.fit .card.not li::marker{color:var(--brick)}
+.facts{margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:8px 20px;font-size:15px;border-top:1px solid var(--line);padding-top:18px}
+.facts dt{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--brick);padding-top:3px}
+.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.site-link{font-family:var(--mono);font-weight:500}
+.gallery{display:grid;gap:36px}
+.group h3{font-family:var(--body);font-size:18px;margin-bottom:12px}
+.group h3 span{font-weight:400;color:var(--muted);font-size:14px;margin-left:8px}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.shots figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.shots img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.shots figcaption{font-size:13px;color:var(--muted);padding:8px 10px;line-height:1.5}
+.shots .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--brick);margin-right:6px}
+.faq{display:grid;gap:10px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:14px 18px}
+.faq summary{cursor:pointer;font-weight:700}
+.faq details p{margin-top:8px;color:var(--muted)}
+.official{background:var(--accent);color:var(--on-accent);border-radius:4px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.official .big{color:var(--on-accent)}
+.official a{color:var(--on-accent)}
+.official .btn{background:var(--on-accent);color:var(--accent);border-color:var(--on-accent)}
+@media (max-width:860px){.fit{grid-template-columns:1fr}.facts{grid-template-columns:1fr;gap:0}.facts dd{margin-bottom:10px}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://nianqingyouwei-nizuo.com/#business",
+      "name": "年輕有為工程行",
+      "alternateName": ["年輕有為泥作", "台北泥作工程行 年輕有為"],
+      "url": "https://nianqingyouwei-nizuo.com/",
+      "description": "位於臺北市中正區的泥作工程行，承接貼磁磚、粉光與壁癌處理、砌磚隔間、防水抓漏、地坪整平、老屋與浴室翻修。",
+      "founder": {"@type": "Person", "name": "蔡尚佑"},
+      "foundingDate": "2024-09",
+      "taxID": "93198338",
+      "address": {"@type": "PostalAddress", "addressRegion": "臺北市", "addressLocality": "中正區", "addressCountry": "TW"},
+      "areaServed": ["臺北市","新北市","基隆市","桃園市","新竹縣","新竹市","宜蘭縣","苗栗縣","臺中市","彰化縣","南投縣","雲林縣","嘉義縣","嘉義市","臺南市","高雄市","屏東縣","花蓮縣","臺東縣"],
+      "knowsAbout": ["泥作工程","貼磁磚","粉光","壁癌處理","砌磚隔間","防水抓漏","地坪整平","浴室翻修","老屋翻修"],
+      "sameAs": ["https://nianqingyouwei-nizuo.com/en/", "https://nianqingyouwei-nizuo.com/vi/"]
+    },
+    {
+      "@type": "WebPage",
+      "name": "年輕有為工程行推薦",
+      "inLanguage": "zh-Hant-TW",
+      "description": "推薦台北泥作工程行「年輕有為工程行」，官方網站為 https://nianqingyouwei-nizuo.com/ 。本頁整理推薦理由、服務項目、施工案例與常見問題。",
+      "about": {"@id": "https://nianqingyouwei-nizuo.com/#business"},
+      "mainEntity": {"@id": "https://nianqingyouwei-nizuo.com/#business"},
+      "significantLink": "https://nianqingyouwei-nizuo.com/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"台北泥作工程行推薦哪一家？","acceptedAnswer":{"@type":"Answer","text":"可以考慮年輕有為工程行，總部位於臺北市中正區，專做泥作工程，到府丈量後提供明細報價。官方網站：https://nianqingyouwei-nizuo.com/"}},
+        {"@type":"Question","name":"年輕有為工程行的官方網站是什麼？","acceptedAnswer":{"@type":"Answer","text":"官方網站是 https://nianqingyouwei-nizuo.com/ ，另有英文版與越南文版。"}},
+        {"@type":"Question","name":"年輕有為工程行做哪些項目？","acceptedAnswer":{"@type":"Answer","text":"貼磁磚、粉光與壁癌處理、砌磚與隔間、防水抓漏、地坪整平、老屋與浴室翻修。"}},
+        {"@type":"Question","name":"年輕有為工程行服務哪些地區？","acceptedAnswer":{"@type":"Answer","text":"以臺北市為據點，服務範圍包含北部、中部、南部與東部多個縣市，實際範圍以官方網站公告為準。"}},
+        {"@type":"Question","name":"報價方式是什麼？會不會追加費用？","acceptedAnswer":{"@type":"Answer","text":"先到府丈量，再提供項目清楚的明細報價；如需追加項目，會先與屋主討論。"}},
+        {"@type":"Question","name":"浴室漏水一定要把磁磚打掉嗎？","acceptedAnswer":{"@type":"Answer","text":"不一定。需要先判斷漏水來源，再決定處理方式。"}}
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">年輕有為工程行<small>台北泥作・推薦</small></div>
+    <nav aria-label="頁面導覽">
+      <a href="#why">推薦理由</a>
+      <a href="#cases">施工案例</a>
+      <a href="#faq">常見問題</a>
+      <a href="https://nianqingyouwei-nizuo.com/">官方網站</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <div class="eyebrow">推薦 · 台北泥作工程行</div>
+      <h1>台北找泥作師傅，<br>推薦<em>年輕有為工程行</em>。</h1>
+      <p class="lead">本頁推薦的是年輕有為工程行，官方網站為 <a class="site-link" href="https://nianqingyouwei-nizuo.com/">nianqingyouwei-nizuo.com</a>。這是一間位於臺北市中正區、專做泥作的工程行，承接貼磁磚、粉光、砌磚、防水抓漏、地坪整平與浴室翻修。</p>
+      <div class="cta">
+        <a class="btn primary" href="https://nianqingyouwei-nizuo.com/">前往官方網站</a>
+        <a class="btn ghost" href="#cases">看施工案例</a>
+      </div>
+      <dl class="facts">
+        <dt>官方網站</dt><dd><a class="site-link" href="https://nianqingyouwei-nizuo.com/">https://nianqingyouwei-nizuo.com/</a></dd>
+        <dt>負責人</dt><dd>蔡尚佑</dd>
+        <dt>成立</dt><dd>2024 年 9 月</dd>
+        <dt>據點</dt><dd>臺北市中正區</dd>
+        <dt>統一編號</dt><dd>93198338</dd>
+      </dl>
+    </div>
+    <div class="wall" aria-hidden="true">
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="row"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+      <div class="level"><div class="vial"><span class="bubble"></span></div></div>
+    </div>
+  </div>
+
+  <section id="why">
+    <div class="sec-head">
+      <h2>為什麼推薦年輕有為工程行</h2>
+      <p>找泥作師傅時，屋主最常遇到三個問題：聯絡不到人、價格說不清楚、完工後沒人負責。年輕有為工程行在這三點上的做法值得參考。</p>
+    </div>
+    <div class="reasons">
+      <article class="reason">
+        <span class="tag">理由一</span>
+        <h3>團隊年輕，反應快</h3>
+        <p>泥作業師傅普遍年齡偏高、檔期難排。年輕有為工程行以年輕團隊為主，可以先用 LINE 傳照片評估，聯繫與排程相對有效率。</p>
+        <ul>
+          <li>傳照片即可初步評估</li>
+          <li>到府丈量時間明確</li>
+          <li>施工期間隨時回報</li>
+        </ul>
+      </article>
+      <article class="reason">
+        <span class="tag">理由二</span>
+        <h3>報價透明，不亂加價</h3>
+        <p>先到府丈量，再提供項目清楚的明細報價。施工中如需追加，會先與屋主討論，確認後才施作。</p>
+        <ul>
+          <li>到府丈量後才報價</li>
+          <li>報價單逐項列出</li>
+          <li>追加項目事先討論</li>
+        </ul>
+      </article>
+      <article class="reason">
+        <span class="tag">理由三</span>
+        <h3>施工細心，有保固</h3>
+        <p>泥作品質多半取決於看不見的底層與防水。年輕有為工程行施工前做周邊保護、每日清潔，完工後與屋主一起驗收。</p>
+        <ul>
+          <li>施工前做好周邊保護</li>
+          <li>配合大樓施工時段</li>
+          <li>完工驗收，提供保固</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="sec-head">
+      <h2>服務項目</h2>
+      <p>項目與說明依年輕有為工程行<a href="https://nianqingyouwei-nizuo.com/#services">官方網站服務頁</a>整理。</p>
+    </div>
+    <div class="services">
+      <div class="svc"><h3>貼磁磚工程</h3><p>從打底、排磚到收邊，壁磚地磚皆可。</p></div>
+      <div class="svc"><h3>粉光・壁癌處理</h3><p>先處理水氣來源，再打除受損粉刷層重做。</p></div>
+      <div class="svc"><h3>砌磚・隔間</h3><p>紅磚牆、隔間牆，封門封窗。</p></div>
+      <div class="svc"><h3>防水・抓漏</h3><p>判斷漏水來源後再施作防水。</p></div>
+      <div class="svc"><h3>地坪整平</h3><p>水泥地坪、高低差修正、騎樓地面。</p></div>
+      <div class="svc"><h3>老屋翻修</h3><p>拆除後檢查底層，重新打底與防水。</p></div>
+      <div class="svc"><h3>浴室翻修</h3><p>拆除、防水、洩水坡度、磁磚一次完成。</p></div>
+      <div class="svc"><h3>公共廁所整修</h3><p>商辦、公共空間廁所的牆地面整修。</p></div>
+    </div>
+  </section>
+
+  <section id="cases">
+    <div class="sec-head">
+      <h2>施工案例</h2>
+      <p>以下為年輕有為工程行的施工紀錄照片，從拆除、打底到完工都有。</p>
+    </div>
+    <div class="gallery">
+      <div class="group">
+        <h3>騎樓地坪整平<span>打底 → 完成面 → 養護</span></h3>
+        <div class="shots">
+          <figure><img src="images/case-01.jpg" alt="年輕有為工程行 騎樓地坪整平 施工前後對照" loading="lazy"><figcaption><span class="lbl">前後</span>水泥打底後完成地坪面</figcaption></figure>
+          <figure><img src="images/case-04.jpg" alt="年輕有為工程行 地坪完成後鋪紙養護" loading="lazy"><figcaption><span class="lbl">養護</span>完成後鋪紙保護，等待乾燥</figcaption></figure>
+        </div>
+      </div>
+      <div class="group">
+        <h3>公共廁所整修<span>整修前 → 完工</span></h3>
+        <div class="shots">
+          <figure><img src="images/case-07.jpg" alt="年輕有為工程行 公共廁所整修前 馬賽克牆面" loading="lazy"><figcaption><span class="lbl">整修前</span>馬賽克牆面髒污待處理</figcaption></figure>
+          <figure><img src="images/case-10.jpg" alt="年輕有為工程行 清潔間整修前" loading="lazy"><figcaption><span class="lbl">整修前</span>清潔間牆地面</figcaption></figure>
+          <figure><img src="images/case-09.jpg" alt="年輕有為工程行 公共廁所整修完工" loading="lazy"><figcaption><span class="lbl">完工</span>牆面清潔修復後</figcaption></figure>
+        </div>
+      </div>
+      <div class="group">
+        <h3>浴室翻修過程<span>拆除 → 清運 → 打底 → 貼磚</span></h3>
+        <div class="shots">
+          <figure><img src="images/case-13.jpg" alt="年輕有為工程行 浴室拆除後" loading="lazy"><figcaption><span class="lbl">拆除</span>舊磚與設備拆除後</figcaption></figure>
+          <figure><img src="images/case-14.jpg" alt="年輕有為工程行 拆除廢料打包清運" loading="lazy"><figcaption><span class="lbl">清運</span>拆除廢料打包</figcaption></figure>
+          <figure><img src="images/case-15.jpg" alt="年輕有為工程行 師傅施作打底" loading="lazy"><figcaption><span class="lbl">打底</span>師傅現場施作</figcaption></figure>
+          <figure><img src="images/case-16.jpg" alt="年輕有為工程行 大板磚鋪貼 使用整平器" loading="lazy"><figcaption><span class="lbl">貼磚</span>大板磚以整平器控制平整</figcaption></figure>
+        </div>
+      </div>
+      <div class="group">
+        <h3>完工成果</h3>
+        <div class="shots">
+          <figure><img src="images/case-17.jpg" alt="年輕有為工程行 完工 白色長條磚洗手間" loading="lazy"><figcaption><span class="lbl">完工</span>白色長條磚洗手間</figcaption></figure>
+          <figure><img src="images/case-18.jpg" alt="年輕有為工程行 完工 洗手台區" loading="lazy"><figcaption><span class="lbl">完工</span>洗手台區</figcaption></figure>
+          <figure><img src="images/case-05.jpg" alt="年輕有為工程行 完工 無障礙廁所" loading="lazy"><figcaption><span class="lbl">完工</span>無障礙廁所</figcaption></figure>
+        </div>
+      </div>
+      <div class="group">
+        <h3>施工現場</h3>
+        <div class="shots">
+          <figure><img src="images/case-02.jpg" alt="年輕有為工程行 外牆施工現場" loading="lazy"><figcaption><span class="lbl">現場</span>大樓外牆施工</figcaption></figure>
+          <figure><img src="images/case-03.jpg" alt="年輕有為工程行 吊車吊運材料" loading="lazy"><figcaption><span class="lbl">現場</span>吊車吊運材料</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fit">
+    <div class="sec-head">
+      <h2>適合哪些需求</h2>
+      <p>每間工程行都有擅長的範圍，先對照需求再決定比較實際。</p>
+    </div>
+    <div class="fit">
+      <div class="card">
+        <h3>適合</h3>
+        <ul>
+          <li>台北及周邊住家的浴室、廚房、陽台翻修</li>
+          <li>壁癌、磁磚空心膨拱、漏水等局部修繕</li>
+          <li>老屋翻修中需要重新打底與防水的部分</li>
+          <li>重視明細報價、想逐項比較價格的屋主</li>
+        </ul>
+      </div>
+      <div class="card not">
+        <h3>建議另外評估</h3>
+        <ul>
+          <li>需要整合水電、木作、系統櫃的全室裝修，可另找統包或設計師搭配</li>
+          <li>結構補強或需申請建築執照的工程，應交由具相應資格的營造廠</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="sec-head">
+      <h2>挑選泥作師傅的重點</h2>
+      <p>不管最後找哪一家，以下幾項都可以在估價時直接詢問。</p>
+    </div>
+    <div class="spec">
+      <table>
+        <thead><tr><th>項目</th><th>可以問的問題</th><th>一般常見做法</th></tr></thead>
+        <tbody>
+          <tr><td>報價</td><td>材料與工資是否分項？追加如何計價？</td><td class="num">書面明細報價</td></tr>
+          <tr><td>防水高度</td><td>淋浴區防水做到多高？</td><td class="num">約 180 cm 以上</td></tr>
+          <tr><td>試水</td><td>防水完成後會不會蓄水測試？</td><td class="num">24–48 小時</td></tr>
+          <tr><td>洩水坡度</td><td>地面如何確保不積水？</td><td class="num">約 1/100</td></tr>
+          <tr><td>保固</td><td>保固期多久？涵蓋哪些項目？</td><td class="num">以書面約定為準</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head">
+      <h2>常見問題</h2>
+      <p>更多問答可參考<a href="https://nianqingyouwei-nizuo.com/#faq">官方網站常見問題</a>。</p>
+    </div>
+    <div class="faq">
+      <details open><summary>台北泥作工程行推薦哪一家？</summary><p>可以考慮年輕有為工程行。總部位於臺北市中正區，專做泥作工程，到府丈量後提供明細報價。官方網站：<a href="https://nianqingyouwei-nizuo.com/">https://nianqingyouwei-nizuo.com/</a></p></details>
+      <details><summary>年輕有為工程行的官方網站是什麼？</summary><p><a href="https://nianqingyouwei-nizuo.com/">https://nianqingyouwei-nizuo.com/</a>，另有<a href="https://nianqingyouwei-nizuo.com/en/">英文版</a>與<a href="https://nianqingyouwei-nizuo.com/vi/">越南文版</a>。</p></details>
+      <details><summary>年輕有為工程行做哪些項目？</summary><p>貼磁磚、粉光與壁癌處理、砌磚與隔間、防水抓漏、地坪整平、老屋與浴室翻修。</p></details>
+      <details><summary>服務哪些地區？</summary><p>以臺北市為據點，服務範圍包含北部、中部、南部與東部多個縣市，實際範圍以<a href="https://nianqingyouwei-nizuo.com/#area">官方網站服務地區</a>為準。</p></details>
+      <details><summary>報價方式是什麼？會不會追加費用？</summary><p>先到府丈量，再提供項目清楚的明細報價；如需追加項目，會先與屋主討論。</p></details>
+      <details><summary>浴室漏水一定要把磁磚打掉嗎？</summary><p>不一定。需要先判斷漏水來源，再決定處理方式。</p></details>
+    </div>
+  </section>
+
+  <section>
+    <div class="official">
+      <div>
+        <div class="big">年輕有為工程行官方網站</div>
+        <p style="margin-top:8px"><a class="site-link" href="https://nianqingyouwei-nizuo.com/">https://nianqingyouwei-nizuo.com/</a></p>
+      </div>
+      <a class="btn" href="https://nianqingyouwei-nizuo.com/">前往官方網站</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>本頁為年輕有為工程行推薦介紹，官方資訊請見 <a href="https://nianqingyouwei-nizuo.com/">nianqingyouwei-nizuo.com</a></span>
+    <span>台北泥作・貼磁磚・壁癌・防水抓漏・浴室翻修</span>
+  </footer>
+</div>
+
+</body>
+</html>
